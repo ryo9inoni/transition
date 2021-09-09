@@ -30,8 +30,8 @@ export default class Query{
     EL.map.x = DATA.windowW / 2;
     EL.map.y = DATA.windowH / 2;
 
-    const anchorItemBefore = document.querySelector('.lxl-fact-anchor__item.-active');
-    const anchorItemAfter = document.querySelector('.lxl-fact-anchor__item[data-area="' + this.query.area + '"]')
+    const anchorItemBefore = document.querySelector('.anchor__item.-active');
+    const anchorItemAfter = document.querySelector('.anchor__item[data-area="' + this.query.area + '"]')
     anchorItemBefore.classList.remove('-active');
     anchorItemAfter.classList.add('-active');
 

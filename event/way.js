@@ -148,7 +148,7 @@ export default class Way {
 
   Jump() {
     if (ORDER[DATA.index].area == 'start' || ORDER[DATA.index].area == 'end' || !STATE.zoom) return;
-    const area = document.querySelector('.lxl-fact-area[data-area="' + ORDER[DATA.index].area + '"]');
+    const area = document.querySelector('.area[data-area="' + ORDER[DATA.index].area + '"]');
     const frontAjust = MODE.IS_WIN == 0 ? area.getBoundingClientRect().bottom * 1.5 : area.getBoundingClientRect().bottom * 2;
 
     if (this.dirFront) {
@@ -255,8 +255,8 @@ export default class Way {
   }
 
   Anchor() {
-    const anchorItemBefore = document.querySelector('.lxl-fact-anchor__item.-active');
-    const anchorItemAfter = document.querySelector('.lxl-fact-anchor__item[data-area="' + ORDER[DATA.index].area + '"]');
+    const anchorItemBefore = document.querySelector('.anchor__item.-active');
+    const anchorItemAfter = document.querySelector('.anchor__item[data-area="' + ORDER[DATA.index].area + '"]');
     const currentArea = anchorItemBefore.dataset.area;
     anchorItemBefore.classList.remove('-active');
     anchorItemAfter.classList.add('-active');

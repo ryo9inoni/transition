@@ -6,7 +6,7 @@ const createEL = {
   stage: new createjs.Stage('canvas'),
   map: new createjs.Container(),
   point: new createjs.Container(),
-  image: new createjs.Bitmap('/corporate/brand/pic/factory/map' + device + '.png')
+  image: new createjs.Bitmap('/assets/img/map' + device + '.png')
 }
 
 export default createEL;

@@ -48,13 +48,13 @@ export default class Init {
   Measure() {
     let newEl;
     newEl = document.createElement('div');
-    newEl.setAttribute('class', 'lxl-fact-measure -horizon');
+    newEl.setAttribute('class', 'measure -horizon');
     EL.container.appendChild(newEl);
-    EL.measureHorizon = document.querySelector('.lxl-fact-measure.-horizon');
+    EL.measureHorizon = document.querySelector('.measure.-horizon');
     newEl = document.createElement('div');
-    newEl.setAttribute('class', 'lxl-fact-measure -vertical');
+    newEl.setAttribute('class', 'measure -vertical');
     EL.container.appendChild(newEl);
-    EL.measureVertical = document.querySelector('.lxl-fact-measure.-vertical');
+    EL.measureVertical = document.querySelector('.measure.-vertical');
   }
 
   Map() {

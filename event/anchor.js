@@ -23,7 +23,7 @@ export default class Anchor {
   Select(e) {
     STATE.contents = true;
     if (e.target.classList.contains('-active') || STATE.active) return;
-    const activeEl = document.querySelector('.lxl-fact-anchor__item.-active');
+    const activeEl = document.querySelector('.anchor__item.-active');
     if ([...EL.anchorItemAll].some(el => el.classList.contains('-active'))) {
        activeEl.classList.remove('-active');
     }
@@ -80,7 +80,7 @@ export default class Anchor {
       }
       
       if (STATE.zoom) {
-        const area = document.querySelector('.lxl-fact-area[data-area="' + ORDER[DATA.index].area + '"]');
+        const area = document.querySelector('.area[data-area="' + ORDER[DATA.index].area + '"]');
         FEATURE.FadeOut(area);
       }
 
